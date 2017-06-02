@@ -87,4 +87,4 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 define('APP_ROOT', '/var/www/html/muti/');
 define('EMAIL_SENDER', '***');
 define('EMAIL_PASSWORD', '****');
-define('EMAIL_TO', '****');
+define('EMAIL_TO', 'mutiinteriors@gmail.com');

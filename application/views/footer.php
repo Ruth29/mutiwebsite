@@ -1,15 +1,54 @@
-<!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
-  <script src="<?php echo base_url('assets/js/vendor/jquery-2.1.4.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/vendor/bootstrap.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/vendor/smoothscroll.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/vendor/velocity.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/vendor/waves.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/vendor/icheck.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/vendor/owl.carousel.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/vendor/jquery.downCount.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/vendor/magnific-popup.min.js');?>"></script>
-  <script type="text/javascript" src="<?php echo base_url('assets/js/vendor/instafeed.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/scripts.js'); ?>"></script>
+ <!-- Footer -->
+    <footer class="footer">
+      <div class="column">
+        <p class="text-sm">For a quote, call us at</p>
+        <p><span class="text-primary">+256 780245412</span> or <span class="text-primary">+256 775680435</p>
+        <div class="social-bar text-center space-bottom">
+          <a href="http://pinterest.com" class="sb-pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest">
+            <i class="socicon-pinterest"></i>
+          </a>
+          <a href="http://facebook.com/mutiinteriors" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+            <i class="socicon-facebook"></i>
+          </a>
+          <a href="https://www.houzz.com/user/muti-interiors" class="sb-houzz" data-toggle="tooltip" data-placement="top" title="Houzz">
+            <i class="socicon-houzz"></i>
+          </a>
+          <a href="http://linkedin.com" class="sb-linkedin" data-toggle="tooltip" data-placement="top" title="Linkedin">
+            <i class="socicon-linkedin"></i>
+          </a>
+          <a href="http://instagram.com/mutiinteriors" class="sb-instagram" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
+            <i class="socicon-instagram"></i>
+          </a>
+          <a href="" class="sb-whatsapp" data-toggle="tooltip" data-placement="top" title="" data-original-title="Whatsapp">
+            <i class="socicon-whatsapp"></i>
+          </a>
+        </div><!-- .social-bar -->
+        <p class="copyright">&copy; 2017. Made by Huguso.</p>
+      </div><!-- .column -->
+      <div class="column">
+        <h3 class="widget-title">
+          Subscription
+          <small>To receive latest offers and discounts from the shop.</small>
+        </h3>
+        <form action="" method="post" class="subscribe-form">
+          <input type="email" class="form-control" name="email" placeholder="Your e-mail">
+          <button type="submit"><i class="material-icons send"></i></button>
+        </form>
+      </div><!-- .column -->
+    </footer><!-- .footer -->
+
+  </div><!-- .page-wrapper -->
+   <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <script src="assets/js/vendor/smoothscroll.js"></script>
+  <script src="assets/js/vendor/velocity.min.js"></script>
+  <script src="assets/js/vendor/waves.min.js"></script>
+  <script src="assets/js/vendor/icheck.min.js"></script>
+  <script src="assets/js/vendor/owl.carousel.min.js"></script>
+  <script src="assets/js/vendor/jquery.downCount.js"></script>
+  <script src="assets/js/vendor/magnific-popup.min.js"></script>
+  <script type="text/javascript" src="assets/js/vendor/instafeed.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
   <script type="text/javascript">
         var userFeed = new Instafeed({
           get: 'user',
@@ -25,22 +64,6 @@
         });
         userFeed.run();
 </script>
-  <script>
-  function initMap() {
-    var uluru = {lat: 0.2346422, lng: 32.5614939};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 14,
-      center: uluru
-    });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
-  }
-  </script>
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ1s3fWAAVE9Qt3oRQIbIZco54pWDnVGE&callback=initMap">
-  </script> 
 
 </body><!-- <body> -->
 

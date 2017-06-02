@@ -29,7 +29,7 @@
   <!-- Theme Styles -->
   <link href="assets/css/theme.min.css" rel="stylesheet" media="screen">
   <link href="assets/css/custom.css" rel="stylesheet" media="screen">
-
+  <?php echo $map['js']; ?>
   <!-- Page Preloading -->
   <script src="assets/js/vendor/page-preloading.js"></script>
 
@@ -41,3 +41,39 @@
 <!-- Body -->
 <!-- Adding/Removing class ".page-preloading" is enabling/disabling background smooth page transition effect and spinner. Make sure you also added/removed link to page-preloading.js script in the <head> of the document. -->
 <body class="page-preloading">
+  <!-- Page Pre-Loader -->
+  <div class="page-preloader">
+    <div class="preloader">
+      <img src="assets/img/preloader.gif" alt="Preloader">
+    </div>
+  </div><!-- .page-preloader -->
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <header class="navbar navbar-sticky">
+
+      <!-- Site Logo -->
+      <a href="<?php echo base_url('/') ?>" class="site-logo visible-desktop"><img src="assets/img/Muti-images/logocolorweb.png">
+        </a>
+      <!-- <a href="index.html" class="site-logo visible-desktop">
+        <span>[</span> M
+        <span class="text-gray">/</span>
+        STORE <span>]</span>
+      </a> --><!-- site-logo.visible-desktop -->
+      <a href="<?php echo base_url('/')?>" class="site-logo visible-mobile">
+        <span>[</span> Muti <span>]</span>
+      </a><!-- site-logo.visible-mobile -->
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <div class="inner">
+          <div class="toolbar-toggle hidden-xs">
+            <span class="custom-padding">For a quote, call us at</span>           
+          </div>
+          <div class="toolbar-button hidden-xs">
+            <i class="material-icons phone"></i>
+          <span class="text-gray custom-padding">+256 775680435</span>
+          </div>
+        </div><!-- .inner -->
+      </div><!-- .toolbar -->
+    </header><!-- .navbar.navbar-sticky -->

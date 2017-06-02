@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/muti/';
+$config['base_url'] = 'http://www.mutiinteriors.com/';
 
 /*
 |--------------------------------------------------------------------------
@@ -521,3 +521,7 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+//custom configs 
+$config['google_map_api_key'] = 'AIzaSyCQ1s3fWAAVE9Qt3oRQIbIZco54pWDnVGE';
+$config['instagram_user_id'] = '';
