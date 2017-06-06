@@ -13,8 +13,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="<?php echo base_url('assets/favicon.ico');?>" type="image/x-icon">
+  <link rel="icon" href="<?php echo base_url('assets/favicon.ico');?>" type="image/x-icon">
 
 
   <!-- Google Material Icons -->
@@ -62,10 +62,10 @@
         STORE <span>]</span>
       </a> --><!-- site-logo.visible-desktop -->
       <a href="<?php echo base_url('/')?>" class="site-logo visible-mobile">
-        <span>[</span> Muti <span>]</span>
+        <span><img src="assets/img/Muti-images/logocolorweb.png"></span>
       </a><!-- site-logo.visible-mobile -->
       <!-- Toolbar -->
-      <div class="toolbar">
+      <div class="toolbar visible-desktop">
         <div class="inner">
           <div class="toolbar-toggle hidden-xs">
             <span class="custom-padding">For a quote, call us at</span>           
@@ -73,6 +73,17 @@
           <div class="toolbar-button hidden-xs">
             <i class="material-icons phone"></i>
           <span class="text-gray custom-padding">+256 775680435</span>
+          </div>
+        </div><!-- .inner -->
+      </div><!-- .toolbar -->
+      <div class="toolbar visible-mobile">
+        <div>
+          <div class="toolbar-toggle hidden-lg">
+            <span class="text-xs ">For a quote, call us at</span>           
+          </div>
+          <div class="toolbar-button hidden-lg">
+            <i class="material-icons phone "></i>
+          <span class="text-gray text-xs ">+256 775680435</span>
           </div>
         </div><!-- .inner -->
       </div><!-- .toolbar -->
