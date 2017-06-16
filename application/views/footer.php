@@ -1,4 +1,4 @@
- <!-- Footer -->
+
     <footer class="footer">
       <div class="column">
         <p class="text-sm">For a quote, call us at</p>
@@ -22,33 +22,30 @@
           <a href="" class="sb-whatsapp" data-toggle="tooltip" data-placement="top" title="" data-original-title="Whatsapp">
             <i class="socicon-whatsapp"></i>
           </a>
-        </div><!-- .social-bar -->
+        </div>
         <p class="copyright">&copy; 2017. Made by Huguso.</p>
-      </div><!-- .column -->
+      </div>
       <div class="column">
         <h3 class="widget-title">
           Subscription
           <small>To receive latest offers and discounts from the shop.</small>
         </h3>
-        <form action="" method="post" class="subscribe-form">
-          <input type="email" class="form-control" name="email" placeholder="Your e-mail">
+        <?php $attributes = array("name" => "subscribeForm", "class" => "subscribe-form");
+                                                echo form_open("home/subscribe", $attributes);?>
+          <input type="email" class="form-control" name="email" placeholder="Your e-mail" /><span class="text-danger"><?php echo form_error('email'); ?></span>
           <button type="submit"><i class="material-icons send"></i></button>
-        </form>
-      </div><!-- .column -->
-    </footer><!-- .footer -->
+        <?php echo form_close(); ?>
+      </div>
+    </footer>
 
-  </div><!-- .page-wrapper -->
-   <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
-  <script src="assets/js/vendor/bootstrap.min.js"></script>
-  <script src="assets/js/vendor/smoothscroll.js"></script>
-  <script src="assets/js/vendor/velocity.min.js"></script>
-  <script src="assets/js/vendor/waves.min.js"></script>
-  <script src="assets/js/vendor/icheck.min.js"></script>
-  <script src="assets/js/vendor/owl.carousel.min.js"></script>
-  <script src="assets/js/vendor/jquery.downCount.js"></script>
-  <script src="assets/js/vendor/magnific-popup.min.js"></script>
-  <script type="text/javascript" src="assets/js/vendor/instafeed.min.js"></script>
-  <script src="assets/js/scripts.js"></script>
+  </div>
+   <script src="<?php echo base_url('assets/js/vendor/jquery-2.1.4.min.js')?>"></script>
+  <script src="<?php echo base_url('assets/js/vendor/bootstrap.min.js')?>"></script>
+  <script src="<?php echo base_url('assets/js/vendor/smoothscroll.js')?>"></script>
+  <script src="<?php echo base_url('assets/js/vendor/owl.carousel.min.js')?>"></script>
+  <script src="<?php echo base_url('assets/js/vendor/jquery.downCount.js')?>"></script>
+  <script type="text/javascript" src="<?php echo base_url('assets/js/vendor/instafeed.min.js')?>"></script>
+  <script src="<?php echo base_url('assets/js/scripts.js')?>"></script>
   <script type="text/javascript">
         var userFeed = new Instafeed({
           get: 'user',
@@ -65,6 +62,6 @@
         userFeed.run();
 </script>
 
-</body><!-- <body> -->
+</body>
 
 </html>

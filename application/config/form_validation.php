@@ -3,6 +3,6 @@
    	'home/send_message' => array(
    		array(
    			'field' =>'email',
-   			'rules' =>'required')
+   			'rules' =>'required|valid_email')
    		));
 ?>

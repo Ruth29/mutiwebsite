@@ -4,67 +4,47 @@
   <meta charset="utf-8">
   <title>Muti Furniture - Handmade Pieces from Uganda</title>
 
-  <!--SEO Meta Tags-->
   <meta name="description" content="Muti Furniture" />
   <meta name="keywords" content="shop, furniture, modern, minimalist style, responsive, online store, business, mobile, blog, bootstrap, html5, css3, jquery, js, gallery, slider, touch, creative, clean" />
   <meta name="author" content="Rokaux" />
 
-  <!--Mobile Specific Meta Tag-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-  <!--Favicon-->
   <link rel="shortcut icon" href="<?php echo base_url('assets/favicon.ico');?>" type="image/x-icon">
   <link rel="icon" href="<?php echo base_url('assets/favicon.ico');?>" type="image/x-icon">
 
+  <link href="<?php echo base_url('assets/css/vendor/material-icons.min.css')?>" rel="stylesheet" media="screen">
+  
+  <link href="<?php echo base_url('assets/css/vendor/bootstrap.min.css')?>" rel="stylesheet" media="screen">
 
-  <!-- Google Material Icons -->
-  <link href="assets/css/vendor/material-icons.min.css" rel="stylesheet" media="screen">
-
-  <!-- Brand Icons -->
-  <link href="assets/css/vendor/socicon.min.css" rel="stylesheet" media="screen">
-
-  <!-- Bootstrap -->
-  <link href="assets/css/vendor/bootstrap.min.css" rel="stylesheet" media="screen">
-
-  <!-- Theme Styles -->
-  <link href="assets/css/theme.min.css" rel="stylesheet" media="screen">
-  <link href="assets/css/custom.css" rel="stylesheet" media="screen">
+  
+  <link href="<?php echo base_url('assets/css/theme.min.css')?>" rel="stylesheet" media="screen">
+  <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" media="screen">
   <?php echo $map['js']; ?>
-  <!-- Page Preloading -->
-  <script src="assets/js/vendor/page-preloading.js"></script>
+  
+  <script src="<?php echo base_url('assets/js/vendor/page-preloading.js')?>"></script>
 
-  <!-- Modernizr -->
-  <script src="assets/js/vendor/modernizr.custom.js"></script>
+  
+  <script src="<?php echo base_url('assets/js/vendor/modernizr.custom.js')?>"></script>
 
 </head>
 
-<!-- Body -->
-<!-- Adding/Removing class ".page-preloading" is enabling/disabling background smooth page transition effect and spinner. Make sure you also added/removed link to page-preloading.js script in the <head> of the document. -->
+
 <body class="page-preloading">
-  <!-- Page Pre-Loader -->
   <div class="page-preloader">
     <div class="preloader">
-      <img src="assets/img/preloader.gif" alt="Preloader">
+      <img src="<?php echo base_url('assets/img/preloader.gif')?>" alt="Preloader">
     </div>
-  </div><!-- .page-preloader -->
-
-  <!-- Page Wrapper -->
+  </div>
   <div class="page-wrapper">
 
     <header class="navbar navbar-sticky">
 
-      <!-- Site Logo -->
-      <a href="<?php echo base_url('/') ?>" class="site-logo visible-desktop"><img src="assets/img/Muti-images/logocolorweb.png">
+      <a href="<?php echo base_url('/') ?>" class="site-logo visible-desktop"><img src="<?php echo base_url('assets/img/Muti-images/logocolorweb.png')?>">
         </a>
-      <!-- <a href="index.html" class="site-logo visible-desktop">
-        <span>[</span> M
-        <span class="text-gray">/</span>
-        STORE <span>]</span>
-      </a> --><!-- site-logo.visible-desktop -->
       <a href="<?php echo base_url('/')?>" class="site-logo visible-mobile">
-        <span><img src="assets/img/Muti-images/logocolorweb.png"></span>
-      </a><!-- site-logo.visible-mobile -->
-      <!-- Toolbar -->
+        <span><img src="<?php echo base_url('assets/img/Muti-images/logocolorweb.png')?>"></span>
+      </a>
       <div class="toolbar visible-desktop">
         <div class="inner">
           <div class="toolbar-toggle hidden-xs">
@@ -74,8 +54,7 @@
             <i class="material-icons phone"></i>
           <span class="text-gray custom-padding">+256 775680435</span>
           </div>
-        </div><!-- .inner -->
-      </div><!-- .toolbar -->
+        </div>
       <div class="toolbar visible-mobile">
         <div>
           <div class="toolbar-toggle hidden-lg">
@@ -85,6 +64,7 @@
             <i class="material-icons phone "></i>
           <span class="text-gray text-xs ">+256 775680435</span>
           </div>
-        </div><!-- .inner -->
-      </div><!-- .toolbar -->
-    </header><!-- .navbar.navbar-sticky -->
+        </div>
+      </div>
+      
+    </header>

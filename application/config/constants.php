@@ -85,6 +85,6 @@ defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automat
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
 define('APP_ROOT', '/var/www/html/muti/');
-define('EMAIL_SENDER', '***');
-define('EMAIL_PASSWORD', '****');
+define('SMTP_USER', '***');
+define('SMTP_PASS', '****');
 define('EMAIL_TO', 'mutiinteriors@gmail.com');
